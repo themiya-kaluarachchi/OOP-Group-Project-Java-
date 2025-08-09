@@ -1,0 +1,153 @@
+#regional-info {
+  -fx-background-color: #578FCA;
+}
+
+.dashboard-pane .regional-info-button {
+  -fx-background-color: #3674B5;
+  -fx-background-image: url("regional1.jpg");
+  -fx-background-size: cover;
+  -fx-background-repeat: no-repeat;
+  -fx-text-fill: white;
+  -fx-alignment: top-center;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+
+.top-bar {
+  -fx-background-color: #3674B5;
+  -fx-pref-width: 1300px;
+}
+
+.title-label {
+  -fx-background-color: #0277bd;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 28px;
+}
+
+.serach-field {
+  -fx-font: bold 14 "FiraCode";
+  -fx-text-fill: gray;
+  -fx-pref-width: 300;
+  -fx-pref-height: 40;
+  -fx-background-radius: 20;
+  -fx-padding: 0 0 0 45px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 0);
+}
+
+.back-button {
+  -fx-background-color: #578FCA;
+  -fx-text-fill: white;
+  -fx-font: bold 14 "FiraCode";
+  -fx-pref-width: 100;
+  -fx-pref-height: 40;
+  -fx-background-radius: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 0);
+}
+
+.back-button:hover {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+.filter-button {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: black;
+  -fx-font-size: 15px;
+  -fx-font-weight: bold;
+  -fx-padding: 6px 12px;
+  -fx-background-radius: 18px;
+  -fx-cursor: hand;
+  -fx-border-color: #ffffff;
+  -fx-border-radius: 18px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+
+.active {
+  -fx-background-color: #E0FFFF;
+  -fx-text-fill: #008080;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+.SeaLife:hover {
+  -fx-background-color: #E0FFFF;
+  -fx-text-fill: #008080;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+.Coral_ref:hover {
+  -fx-background-color: #E0FFFF;
+  -fx-text-fill: #008080;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+.beach_spot:hover {
+  -fx-background-color: #E0FFFF;
+  -fx-text-fill: #008080;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+.scrol-pane {
+  -fx-pref-width: 1000px;
+  -fx-pref-height: 600px;
+}
+
+.gridpane {
+  -fx-pref-width: 1000px;
+  -fx-pref-height: 600px;
+  -fx-padding: 50px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center center;
+  -fx-background-size: cover;
+}
+.gridpane .card-profile {
+  -fx-background-color: #ffffff;
+  -fx-spacing: 10;
+  -fx-border-color: #ffffff;
+  -fx-pref-width: 280px;
+  -fx-pref-height: 300px;
+  -fx-min-width: 280px;
+  -fx-min-height: 300px;
+}
+.gridpane .card-profile .images {
+  -fx-set-width: 280px;
+  -fx-set-height: 150px;
+}
+.gridpane .card-profile .titleD {
+  -fx-font: bold 15 "FiraCode";
+  -fx-spacing: 10;
+}
+.gridpane .card-profile .shortD {
+  -fx-font: 13 "FiraCode";
+  -fx-text-fill: gray;
+  -fx-wrap-text: true;
+  -fx-alignment: center;
+  -fx-pref-width: 270px;
+  -fx-pref-height: 50px;
+}
+.gridpane .card-profile .MoreInfobtn {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: black;
+  -fx-font-size: 10px;
+  -fx-background-radius: 18px;
+  -fx-cursor: hand;
+  -fx-border-color: #ffffff;
+  -fx-border-radius: 18px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+.gridpane .card-profile .MoreInfobtn:hover {
+  -fx-background-color: #E0FFFF;
+  -fx-text-fill: #008080;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+.gridpane .stack-pane {
+  -fx-pref-width: 280px;
+  -fx-pref-height: 300px;
+  -fx-min-width: 280px;
+  -fx-min-height: 300px;
+  -fx-background-radius: 10;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+.gridpane .stack-pane:hover {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+/*# sourceMappingURL=RegionalInfo.css.map */

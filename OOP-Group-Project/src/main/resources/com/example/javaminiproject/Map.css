@@ -1,0 +1,38 @@
+#map {
+  -fx-background-color: #578FCA;
+}
+
+.map-pane {
+  -fx-background-color: #3674B5;
+}
+
+.map-dashboard {
+  -fx-pref-width: 1040;
+  -fx-pref-height: 701;
+}
+
+.serach-field {
+  -fx-font: bold 14 "FiraCode";
+  -fx-text-fill: gray;
+  -fx-pref-width: 300;
+  -fx-pref-height: 40;
+  -fx-background-radius: 20;
+  -fx-padding: 0 0 0 45px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 0);
+}
+
+.back-button {
+  -fx-background-color: #578FCA;
+  -fx-text-fill: white;
+  -fx-font: bold 14 "FiraCode";
+  -fx-pref-width: 100;
+  -fx-pref-height: 40;
+  -fx-background-radius: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 0);
+}
+
+.back-button:hover {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+/*# sourceMappingURL=Map.css.map */

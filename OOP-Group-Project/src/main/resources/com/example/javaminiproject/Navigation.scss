@@ -1,0 +1,41 @@
+.root {
+  -fx-background-color: #3674B5;
+  -fx-background-image: url("images/background/background1.jpg");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+  -fx-background-position: center center;
+}
+
+.navigation-pane {
+  -fx-background-color: #3674B5;
+  -fx-pref-width: 338px;
+  -fx-max-width: 338px;
+  -fx-min-width: 338px;
+
+  .icon-pane {
+    -fx-background-image: url("images/appicon/icon1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+  }
+
+  .title-pane {
+    .label {
+      -fx-text-fill: white;
+    }
+  }
+
+  .button {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 50px;
+    -fx-border-style: none;
+    -fx-background-color: #3674B5;
+    -fx-text-fill: white;
+    -fx-spacing: 100px;
+    -fx-alignment: center-left;
+    -fx-background-radius: 7;
+  }
+
+  .button:hover {
+    -fx-background-color: #578FCA;
+  }
+}

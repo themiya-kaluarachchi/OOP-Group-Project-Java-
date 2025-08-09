@@ -1,0 +1,90 @@
+.moreInfo-pane {
+  .top-bar{
+    -fx-background-color: #3674B5;
+    -fx-pref-width: 1300px;
+
+    .more-details-label {
+      -fx-text-fill: white;
+      -fx-font: bold 28 "FiraCode";
+      -fx-alignment: center;
+    }
+
+    .back-button {
+      -fx-background-color: #578FCA;
+      -fx-text-fill: white;
+      -fx-font: bold 14 "FiraCode";
+      -fx-pref-width: 100;
+      -fx-pref-height: 40;
+      -fx-background-radius: 20;
+      -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.5, 0, 0);
+    }
+
+    .back-button:hover {
+      -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+    }
+  }
+
+  .card {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-padding: 100px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.5, 0, 0);
+
+    .main-image {
+      -fx-alignment: center;
+    }
+
+    Button {
+      -fx-background-color: #ffffff ;
+      -fx-text-fill: black;
+      -fx-font: bold 14 "FiraCode";
+      -fx-background-radius: 18px;
+      -fx-cursor: hand;
+      -fx-border-color: #ffffff;
+      -fx-border-radius: 18px;
+      -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+    }
+
+    Button:hover {
+      -fx-background-color:#E0FFFF;
+      -fx-text-fill:#008080;
+      -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+    }
+  }
+
+  .details-label {
+    -fx-font: 18 "FiraCode";
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+  }
+
+  .weather-data {
+    -fx-background-color: #A1E3F9;
+    -fx-background-radius: 10;
+
+    Label {
+      -fx-font: Bold 18 "FiraCode";
+      -fx-text-fill: Gray;
+    }
+  }
+}
+
+.more-button{
+  -fx-background-color: #0277bd;
+  -fx-text-fill: white;
+  -fx-font-size: 20px;
+  -fx-padding: 6px 12px;
+  -fx-background-radius: 18px;
+  -fx-cursor: hand;
+  -fx-border-color: #578FCA;
+  -fx-border-radius: 18px;
+}
+
+
+.more-topic{
+  -fx-background-color: white;
+  -fx-text-fill: #0277bd;
+  -fx-font-weight: bold;
+  -fx-font-size: 28px;
+}

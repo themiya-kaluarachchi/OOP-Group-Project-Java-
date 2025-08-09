@@ -1,0 +1,96 @@
+#weather {
+  -fx-background-color: #578FCA;
+}
+
+.weather-pane {
+  -fx-font-family: "Fira Code";
+  -fx-alignment: center;
+  /*  TextField {
+      -fx-background-color: #ffffff;
+      -fx-border-color: #ccc;
+      -fx-border-radius: 8px;
+      -fx-background-radius: 8px;
+      -fx-font-size: 14px;
+      -fx-padding: 4px 8px;
+      -fx-pref-width: 180px;
+    }*/
+}
+.weather-pane Label {
+  -fx-text-fill: #333;
+}
+.weather-pane Button {
+  -fx-background-color: #578FCA;
+  -fx-text-fill: white;
+  -fx-font: bold 14 "FiraCode";
+  -fx-pref-width: 100;
+  -fx-pref-height: 40;
+  -fx-background-radius: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 0);
+}
+.weather-pane Button:hover {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+.weather-pane .serach-field {
+  -fx-font: bold 14 "FiraCode";
+  -fx-text-fill: gray;
+  -fx-pref-width: 300;
+  -fx-pref-height: 40;
+  -fx-background-radius: 20;
+  -fx-padding: 0 0 0 45px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 0);
+}
+.weather-pane .today-pane {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 10px;
+  -fx-pref-width: 925px;
+  -fx-pref-height: 300px;
+  -fx-padding: 20px;
+  -fx-spacing: 10px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+
+HBox {
+  -fx-spacing: 5px;
+}
+
+.weather-card {
+  -fx-pref-width: 150px;
+  -fx-pref-height: 200px;
+  -fx-background-radius: 10;
+  -fx-background-color: #ffffff;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+
+.weather-card:hover {
+  -fx-background-color: #ffffff;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+#topLable {
+  -fx-background-color: #3674B5;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 28px;
+}
+
+.day-label {
+  -fx-font: 24 "FiraCode";
+  -fx-text-fill: #3674B5;
+}
+
+.temp-label {
+  -fx-font: 18 "FiraCode";
+  -fx-text-fill: gray;
+}
+
+.description-label {
+  -fx-font: 18 "FiraCode";
+  -fx-text-fill: gray;
+}
+
+.top-bar {
+  -fx-background-color: #3674B5;
+  -fx-pref-width: 1300px;
+}
+
+/*# sourceMappingURL=Weather.css.map */

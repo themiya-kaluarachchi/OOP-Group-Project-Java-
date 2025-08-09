@@ -1,0 +1,80 @@
+#home {
+  -fx-background-color: #578FCA;
+}
+
+.dashboard-pane {
+  -fx-font: bold 28 "FiraCode";
+}
+.dashboard-pane .live-weather {
+  -fx-background-color: #A1E3F9;
+  -fx-background-radius: 10;
+  -fx-pref-width: 300;
+  -fx-pref-height: 573;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+.dashboard-pane .live-weather .label {
+  -fx-text-fill: #578FCA;
+}
+.dashboard-pane .live-weather #title-label {
+  -fx-font-size: 24;
+}
+.dashboard-pane .live-weather #temp-label {
+  -fx-font-size: 48;
+}
+.dashboard-pane .live-weather #celsius-label {
+  -fx-font-size: 28;
+}
+.dashboard-pane .live-weather #weather-label {
+  -fx-font-size: 18;
+}
+.dashboard-pane .live-weather #feels-label {
+  -fx-font-size: 16;
+}
+.dashboard-pane .live-weather #location-label {
+  -fx-font: 28 "FiraCode";
+  -fx-text-fill: gray;
+}
+.dashboard-pane .live-weather #day-label {
+  -fx-font: 18 "FiraCod";
+  -fx-text-fill: gray;
+}
+.dashboard-pane #title-label {
+  -fx-text-fill: #578FCA;
+  -fx-font: bold 48 "FiraCode";
+}
+.dashboard-pane .stack-pane {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+.dashboard-pane .stack-pane .button {
+  -fx-text-fill: white;
+}
+.dashboard-pane .stack-pane .regional-info-button {
+  -fx-background-color: #000;
+  -fx-background-image: url("images/dashboard/regional1.png");
+  -fx-background-size: cover;
+  -fx-background-repeat: no-repeat;
+  -fx-alignment: top-center;
+  -fx-pref-width: 265;
+  -fx-pref-height: 312;
+}
+.dashboard-pane .stack-pane .weather-button {
+  -fx-background-image: url("images/dashboard/weather_button.png");
+  -fx-background-size: cover;
+  -fx-background-repeat: no-repeat;
+  -fx-alignment: top-center;
+  -fx-pref-width: 265;
+  -fx-pref-height: 312;
+}
+.dashboard-pane .stack-pane .map-button {
+  -fx-background-image: url("images/dashboard/map.png");
+  -fx-background-size: cover;
+  -fx-background-repeat: no-repeat;
+  -fx-alignment: top-center;
+  -fx-pref-width: 570;
+  -fx-pref-height: 224;
+}
+.dashboard-pane .stack-pane:hover {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+/*# sourceMappingURL=Dashboard.css.map */

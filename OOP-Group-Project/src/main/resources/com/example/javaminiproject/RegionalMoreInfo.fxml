@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaminiproject.RegionalMoreInfoController">
+    <stylesheets>
+        <URL value="@Navigation.css" />
+        <URL value="@RegionalMoreInfo.css" />
+    </stylesheets>
+    <children>
+
+        <!-- Navigation Pane -->
+        <Pane prefHeight="768.0" prefWidth="350.0" styleClass="navigation-pane">
+            <children>
+                <Pane prefHeight="114.0" prefWidth="119.0" styleClass="icon-pane" />
+                <Pane layoutX="119.0" prefHeight="114.0" prefWidth="200.0" styleClass="title-pane">
+                    <children>
+                        <Label layoutX="14.0" layoutY="41.0" text="Sea Explorer">
+                            <font>
+                                <Font name="Fira Code SemiBold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane layoutY="114.0" prefHeight="520.0" prefWidth="338.0">
+                    <children>
+                        <Button id="home" layoutX="44.0" layoutY="27.0" mnemonicParsing="false" onAction="#onHomeButtonClicked" prefHeight="217.0" prefWidth="296.0" text="Home">
+                            <font><Font name="Fira Code SemiBold" size="18.0" /></font>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true" styleClass="imageview">
+                                    <image><Image url="@images/navigation/home.png" /></image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button id="regional-info" layoutX="44.0" layoutY="97.0" mnemonicParsing="false" onAction="#onRegionalInfoButtonClicked" prefHeight="217.0" prefWidth="296.0" text="Regional Info">
+                            <font><Font name="Fira Code SemiBold" size="18.0" /></font>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true" styleClass="imageview">
+                                    <image><Image url="@images/navigation/location.png" /></image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button id="weather" layoutX="44.0" layoutY="167.0" mnemonicParsing="false" onAction="#onWeatherButtonClicked" prefHeight="217.0" prefWidth="296.0" text="Weather">
+                            <font><Font name="Fira Code SemiBold" size="18.0" /></font>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true" styleClass="imageview">
+                                    <image><Image url="@images/navigation/weather.png" /></image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button id="map" layoutX="44.0" layoutY="237.0" mnemonicParsing="false" onAction="#onMapButtonClicked" prefHeight="217.0" prefWidth="296.0" text="Map">
+                            <font><Font name="Fira Code SemiBold" size="18.0" /></font>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true" styleClass="imageview">
+                                    <image><Image url="@images/navigation/map.png" /></image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+
+        <!-- Main Info Pane -->
+        <Pane prefHeight="768.0" prefWidth="1060.0" styleClass="moreInfo-pane">
+            <children>
+            <Pane fx:id="top_pane" maxHeight="68.0" maxWidth="1300.0" minHeight="68.0" prefHeight="68.0" prefWidth="1300.0" styleClass="top-bar">
+               <children>
+                        <Label layoutX="387.0" layoutY="14.0" prefHeight="40.0" prefWidth="270.0" styleClass="more-details-label" text="Location Details" />
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="88.0" prefHeight="660.0" prefWidth="980.0" styleClass="card">
+               <children>
+                        <ImageView fx:id="MainImage" fitHeight="351.0" fitWidth="413.0" pickOnBounds="true" preserveRatio="true" styleClass="main-image" x="30.0" y="30.0">
+                            <image>
+                                <Image url="@images/RegionalMore/diving.jpg" />
+                            </image>
+                        </ImageView>
+      
+                                  <!-- Title -->
+                      <Label fx:id="titleLabel" layoutX="464.0" layoutY="30.0" prefHeight="17.0" prefWidth="328.0" styleClass="more-topic" text="Deep Dive Paradise" />
+      
+                                  <!-- Spot Info -->
+                      <Label fx:id="ratingLabel" layoutX="464.0" layoutY="70.0" prefHeight="17.0" prefWidth="350.0" style="-fx-text-fill: #34495e; -fx-font-size: 14px;" text="🏊‍♂️ Diving Spot · 2 km     ⭐⭐⭐⭐☆ (4.5)" />
+      
+                                  <!-- Description -->
+                      <Label fx:id="desLabel" layoutX="23.0" layoutY="316.0" prefHeight="176.0" prefWidth="933.0" styleClass="details-label" text="A renowned diving destination known for vibrant coral reefs, sea turtles, and gentle currents ideal for beginners and pros alike." wrapText="true" />
+      
+                      <!-- Buttons -->
+                      <HBox spacing="15" />
+                      <Button layoutX="520.0" layoutY="543.0" onAction="#onWeekWeatherClicked" prefHeight="50.0" prefWidth="366.0" text="Week Weather" />
+                      <Button layoutX="124.0" layoutY="543.0" onAction="#onViewMapClicked" prefHeight="50.0" prefWidth="366.0" text="View on Map" />
+                  <Pane fx:id="weatherData" layoutX="473.0" layoutY="112.0" prefHeight="176.0" prefWidth="483.0" styleClass="weather-data">
+                     <children>
+                        <ImageView fx:id="weatherIcon" fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Desktop/New%20folder/MySQL/Java-Mini-Project/src/main/resources/com/example/javaminiproject/images/weather/clear.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            </children>
+        </Pane>
+    </children>
+</HBox>
