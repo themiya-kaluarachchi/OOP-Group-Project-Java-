@@ -36,11 +36,11 @@ Tourists face multiple challenges while traveling to coastal areas of Sri Lanka:
 
 - **Programming Language**: Java
 - **UI Framework**: JavaFX or Swing
+- **APIs**:
+  - [OpenWeatherMap API](https://openweathermap.org/api)
+- **Database**: MySQL
+
 
 📁 Note: This repository was uploaded separately because the original project was created as a fork, and GitHub does not allow changing the visibility of forked repositories.
 
 🔒 Since the forked version is private and I couldn't make it public, I created this standalone repo to showcase the project.
-
-- **APIs**:
-  - [OpenWeatherMap API](https://openweathermap.org/api)
-- **Database**: MySQL
